@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
+    <script src="js/jquery/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.js"></script>
+    <script defer src="js/validateForm.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reservations.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-override.css">
+</head>
+<header>
+    <header class="navigation-bar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <figure class="border rounded">
+                        <img src="images/logo.jpg" width="73px" height="60px" alt="Logo"
+                            title="The West-Side Homepage" />
+                    </figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="justify-content-end collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Menu
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="menu/menu-appetizers.html">Appetizers</a>
+                                <a class="dropdown-item" href="menu/menu-mains.html">Mains</a>
+                                <a class="dropdown-item" href="menu/menu-drinks.html">Drinks</a>
+                                <a class="dropdown-item" href="menu/menu-desserts.html">Desserts</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="forms.html">Reservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="find-us.html">Find Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+</header>
+
+<body>
+    <div class="container">
+        <div class="reservations-wrapper">
+            <div class="mt-4 reservations-form">
+                <div class="Heading">
+                    <h1 class="display-1">Reserve a table</h1>
+                </div>
+                <form action="thankyou.html" onsubmit="return validateForm()" method="POST"> 
+                    <!-- form validates for valid inputs and sends user to a thank you page if all inputs are valid -->
+                    <div class="form-items">
+                        <div class="row">
+                            <div class="col-lg-6 form-group form-item">
+                                <div class="name-wrapper">
+                                    <!-- first Name input -->
+                                    <label for="date">First Name:</label>
+                                    <input class="form-control form-control-lg" name="fname" id="fname" type="text" placeholder="John" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 form-group form-item">
+                                <div class="name-wrapper">
+                                    <!-- last Name input -->
+                                    <label for="date">Last Name:</label>
+                                    <input class="form-control form-control-lg" name="lname" id="lname" type="text" placeholder="Smith" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-item">
+                            <div class="date-wrapper">
+                                <!-- Date input with latest date of 31st December 2019 -->
+                                <label for="date">Date:</label>
+                                <input class="form-control form-control-lg" name="date" id="date" type="date"
+                                    min="2019-08-18" max="2019-12-31" />
+                            </div>
+                        </div>
+                        <div class="form-group form-item">
+                            <div class="time-wrapper">
+                                <!-- Time input from openings hours to before closing -->
+                                <label for="time">Time:</label>
+                                <input class="form-control form-control-lg" name="time" id="time" type="time"
+                                    min="12:00" max="23:00" />
+                            </div>
+                        </div>
+                        <div class="form-group form-item">
+                            <div class="seat-wrapper">
+                                <!-- Number of seats wanted -->
+                                <label for="seats">Number of seats:</label>
+                                <input class="form-control form-control-lg" name="seats" id="seats" type="number"
+                                    placeholder="1" />
+                            </div>
+                        </div>
+                        <div class="form-group form-item">
+                            <div class="number-wrapper">
+                                <!-- Phone number to message when table is reserved -->
+                                <label for="number">Phone number:</label>
+                                <input class="form-control form-control-lg" name="number" id="number" type="tel"
+                                    maxlength="12" placeholder="+6598737632" />
+                            </div>
+                        </div>
+                        <div class="form-group form-item">
+                            <div class="location-choice-wrapper">
+                                <!-- Choice of location in a drop-down menu -->
+                                <label for="location">Location:</label>
+                                <select class="form-control" id="location">
+                                    <option value="Wheelock" selected>Wheelock Place</option>
+                                    <option value="Vivocity">Vivocity</option>
+                                    <option value="Plaza">Plaza Singapura</option>
+                                    <option value="Parkway">Parkway Parade</option>
+                                    <option value="Junction">Junction 8</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-action">
+                            <div class="submit-wrapper">
+                                <input class="btn btn-primary" name="submit-button" type="submit" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="thank-you">
+                Thank you for choosing to dine with us!
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <!-- Sitemap to lead user back to photo credits and the top of the page of choice -->
+            <div class="site-map-wrapper">
+                <div class="site-map">
+                    <ul class="nav nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link" title="Homepage" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" title="Menu" href="menu/menu-appetizers.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" title="Reservations" href="forms.html">Reservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" title="Find us" href="find-us.html">Find Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" title="Contact" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>

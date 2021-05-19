@@ -1,0 +1,89 @@
+.contacts-wrapper {
+    border: 2px solid rgb(210,210,210);
+    border-radius: 1px;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    background-color: white;
+    margin: 3% 0 85%;
+}
+.contacts-wrapper .contacts {
+    width: 75%;
+    margin: auto;
+    border: 3px solid #6193B0;
+    border-radius: 5px;
+    box-shadow: 4px 3px rgba(0, 0, 0, 0.2);
+}
+.contacts-wrapper .contacts .heading {
+    /* Text shadow added for aesthetic purposes */
+    background-color: #63BDC7;
+    color: white;
+    font-size: 1.4em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+    padding: 1%;
+    border-bottom: 2px solid #6193B0
+}
+.contacts-wrapper .contacts .details {
+    margin-bottom: 2%;
+}
+.contacts-wrapper .contacts .details .detail {
+    margin: 1%;
+}
+.contacts-wrapper .contacts .special-arrangements {
+    padding: 1%;
+    border-top: 2px solid #6193B0;
+    margin-bottom: 1%;
+}
+.customer-feedback-wrapper {
+    border: 2px solid rgb(210,210,210);
+    border-radius: 1px;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    background-color: white;
+    padding: 5% 20%;
+    margin: 3% 0%;
+}
+.customer-feedback-wrapper .customer-feedback {
+    border: 3px solid #6193B0;
+    border-radius: 5px;
+    box-shadow: 4px 3px rgba(0, 0, 0, 0.2);
+    
+}
+.customer-feedback-wrapper .customer-feedback .heading {
+    background-color: #63BDC7;
+    color: white;
+    font-size: 1.4em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+    padding: 1%;
+    border-bottom: 2px solid #6193B0
+}
+.customer-feedback-wrapper .customer-feedback .customer-feedback-form form {
+    margin: 0;
+}
+.customer-feedback-wrapper .customer-feedback .customer-feedback-form .input-wrapper textarea {
+    width: 100%;
+    border: 2px solid #6193B0;
+}
+.customer-feedback-wrapper .customer-feedback .customer-feedback-form .form-action::after {
+    content: ".";
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+}
+.customer-feedback-wrapper .customer-feedback .customer-feedback-form .form-action .submit-wrapper {
+    float: right;
+    margin: 1% 2%;
+}
+.customer-feedback-wrapper .customer-feedback .customer-feedback-form .form-action .submit-wrapper input {
+    /* Added to style submit button */
+    background-color: #63BDC7;
+    border: 0;
+    color: white;
+    font-size: 0.9em;
+    padding: 5%;
+    border-radius: 2px;
+    box-shadow: 2px 2px rgb(210,210,210);
+}

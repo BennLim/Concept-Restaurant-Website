@@ -1,0 +1,23 @@
+.thank-you-wrapper {
+    border: 2px solid rgb(210,210,210);
+    padding: 2% 2%;
+    background-color: white;
+    margin-bottom: 25%;
+}
+
+.message {
+    width: 70%;
+    margin: auto;
+    border: 3px solid #6193B0;
+    border-radius: 5px;
+    box-shadow: 4px 3px rgba(0, 0, 0, 0.2);
+    background-color: #63BDC7;
+}
+
+.message > h1 { 
+    text-shadow: 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.message .text {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+}

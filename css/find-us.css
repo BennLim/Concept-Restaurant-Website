@@ -1,0 +1,17 @@
+.locations-wrapper {
+    border: 2px solid rgb(210,210,210);
+    border-radius: 1px;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    background-color: white;
+}
+.locations-heading {
+    text-align: center;
+    
+}
+.locations-wrapper .location-table {
+    /* Changes size of table */
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}

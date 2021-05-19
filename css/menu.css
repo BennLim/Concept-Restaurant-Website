@@ -1,0 +1,88 @@
+
+.menu-navigation {
+    background-color: #63BDC7;
+}
+.menu-navigation ul {
+    margin: 0;
+}
+.menu-navigation ul li a {
+    /* Display block + padding added to make clickable area larger */
+    padding: 0.8em 4em;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: rgb(240, 240, 240);
+}
+.menu-navigation ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+.menu-navigation ul li a.active {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: rgb(255, 255, 255);
+}
+.menu-header {
+    font-size: 1.8em;
+    padding-left: 3%;
+    margin: 1% 0%;
+    font-weight: bold;
+}
+.menu-wrapper {
+    border: 2px solid rgb(210,210,210);
+    border-radius: 1px;
+    margin-bottom: 3%;
+    background-color: white;
+    padding: 1% 0%;
+}
+.menu-wrapper .menu-item {
+    border: 2px solid #6193B0;
+    border-radius: 8px;
+    padding: 4% 5%;
+    margin-bottom: 1%;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.menu-wrapper .menu-item:hover {
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.4s
+}
+
+.menu-wrapper .menu-item .menu-picture {
+    border-radius: 3px;
+    border: 1px solid #63BDC7;
+    overflow: hidden;
+    box-shadow: 3px 2px rgba(0, 0, 0, 0.2);
+}
+.menu-wrapper .menu-item .menu-picture figure {
+    margin: 0;
+    width: auto;
+}
+.menu-wrapper .menu-item .menu-picture figure img {
+    /* Creates responsive image */
+    width: 100%;
+    height: auto;
+}
+.menu-wrapper .menu-item .text-wrapper {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.menu-wrapper .menu-item .text-wrapper .title-price .title {
+    font-size: 1em;
+    font-weight: bold;
+
+}
+.menu-wrapper .menu-item .text-wrapper .title-price .price {
+    font-size: 0.95em;
+    text-align: center;
+}
+.menu-wrapper .menu-item .description {
+    font-size: 0.85em;
+    width: 90%;
+    margin-top: 2%;
+}
+
+i.fas {
+    /* Change color of icon */
+    color: #63BDC7;
+}

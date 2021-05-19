@@ -1,0 +1,10 @@
+.credits-wrapper {
+    border: 2px solid rgb(210,210,210);
+    border-radius: 1px;
+    margin: 3% 0%;
+    background-color: white;
+    padding: 2% 1%;
+}
+.credits-wrapper ul li {
+    margin: 1%;
+}

@@ -1,0 +1,86 @@
+.info-wrapper {
+    border: 2px solid rgb(210,210,210);
+    border-radius: 1px;
+    background-color: white;
+    
+}
+/* Box shadow added for aesthetic purposes */
+.info-wrapper .contents {
+    border-radius: 5px;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.4);
+    background-color: #63BDC7;
+    color: rgb(250, 250, 250);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    width: 70%;
+    margin: 5% auto;
+}
+
+.arrow {
+    display: none;
+}
+
+
+/* Text shadow added for aesthetic purposes */
+.info-wrapper .name {
+    text-align: center;
+    font-size: 4.5em;
+    text-shadow: 4px 2px rgba(0, 0, 0, 0.4);
+}
+.info-wrapper .sub-name {
+    text-align: center;
+    font-size: 1.5em;
+}
+.info-wrapper .opening-hours {
+    text-align: center;
+    height: 5%;
+}
+.info-wrapper .book {
+    border-radius: 5px;
+    background-color: #6193B0;
+    text-align: center;
+    text-decoration: none;
+    width: 70%;
+    margin: auto;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.4);
+}
+.info-wrapper .book a {
+    display: block;
+    text-decoration: none;
+    padding: 2%;
+    font-size: 1.2em;
+    color: rgb(50, 50, 50);
+    color: white;
+}
+/* Transitiion to a darker colour added */
+.info-wrapper .book a:hover {
+    color: rgb(218, 218, 218);
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.2s;
+}
+
+.section-wrapper {
+    border: 2px solid rgb(210,210,210);
+    padding: 2% 2%;
+    background-color: white;
+}
+.section-wrapper .our-story {
+    /* margin: 0 1%; */
+}
+.title h1 {
+    color: #62bdc7;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    
+}
+.description-photo-wrapper .description {
+    color: rgb(56, 56, 56);
+    font-size: 1.4em;
+    padding: 0;
+}
+.section-wrapper .photo {
+    overflow: hidden;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3)
+}
+
+.section-wrapper .photo img {
+    width: 100%;
+}
